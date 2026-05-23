@@ -1,5 +1,7 @@
+import { API_BASE } from "./config.js";
+
 export async function explainCode({ code, fileName, language }) {
-  const response = await fetch("/api/explain", {
+  const response = await fetch(`${API_BASE}/api/explain`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ code, fileName, language }),

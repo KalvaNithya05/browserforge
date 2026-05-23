@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Resize divider styling */
+.cursor-col-resize {
+  cursor: col-resize;
+}
+
+/* Smooth transitions during drag */
+.select-none {
+  user-select: none;
+}
